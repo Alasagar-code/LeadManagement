@@ -1,0 +1,172 @@
+.leads-container {
+  padding: 20px;
+}
+
+.leads-title {
+  margin-bottom: 16px;
+  color: #d2191f;
+}
+
+.leads-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.leads-filter-input,
+.leads-filter-select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.more-filters-panel {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.loading-spinner {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.pagination-container {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.create-lead-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.action-link {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.action-delete {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #bbdefb, #e3f2fd);
+}
+
+.auth-card {
+  width: 320px;
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1976d2;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-full-width {
+  width: 100%;
+}
+
+.auth-switch-text {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.auth-switch-link {
+  color: #1976d2;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.lead-form-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.lead-form-card {
+  width: 400px;
+}
+
+.lead-form-title {
+  margin-bottom: 20px;
+}
+
+.lead-form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  padding: 8px 14px;
+  background: #1976d2;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #1976d2;
+}
+
+.btn-success {
+  background: #388e3c;
+}
+
+.btn-danger {
+  background: red;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}

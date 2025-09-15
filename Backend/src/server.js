@@ -11,8 +11,24 @@ const leadRoutes = require("./routes/lead");
 app.use(express.json());
 app.use(cookieparser());
 
-const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:5173";
-app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
+const allowedOrigins = [
+  "http://localhost:5173",   // vite dev
+  "http://localhost:5174",   // vite preview
+  "https://lead-management-nu.vercel.app", // vercel frontend
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
+  })
+);
 
 // Routes
 app.get("/", (req, res) => res.send("Backend API is running 🚀"));
